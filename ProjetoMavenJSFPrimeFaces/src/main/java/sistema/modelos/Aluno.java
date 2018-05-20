@@ -66,10 +66,4 @@ public class Aluno implements Serializable{
 	public String toString() {
 		return "Aluno [matricula=" + matricula + ", nome=" + nome + ", curso=" + curso + "]";
 	}
-	
-	
-	
-	
-	
-
 }

@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Professor implements Serializable {
+public class Professor implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -17,6 +17,7 @@ public class Professor implements Serializable {
 	
 	private String nome;
 	private String disciplina;
+	private double salario;
 	
 	public int getNumRegistro() {
 		return numRegistro;
@@ -35,5 +36,11 @@ public class Professor implements Serializable {
 	}
 	public void setDisciplina(String disciplina) {
 		this.disciplina = disciplina;
+	}
+	public double getSalario() {
+		return salario;
+	}
+	public void setSalario(double salario) {
+		this.salario = salario;
 	}
 }

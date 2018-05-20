@@ -28,14 +28,12 @@ public class ProfessorManagedBean {
 		service.alterar(a);
 	}
 
-	
-	
 	public void salvar() {
 		service.salvar(professor);
 
 		if (professores != null)
 			professores.add(professor);
-
+		
 		professor = new Professor();
 
 	}

@@ -6,7 +6,6 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-import sistema.modelos.Aluno;
 import sistema.modelos.Professor;
 
 public class ProfessorService {
@@ -32,7 +31,7 @@ public class ProfessorService {
 		List <Professor >professores;
 		
 		EntityManager em = emf.createEntityManager();
-		Query q = em.createQuery("Select a From Professor a");
+		Query q = em.createQuery("Select b From Professor b");
 		professores = q.getResultList();
 		em.close();
 		
